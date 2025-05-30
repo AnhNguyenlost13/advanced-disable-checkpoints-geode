@@ -8,9 +8,17 @@
 	},
 	"id": "catgirldev.advanced_disable_checkpoints",
 	"name": "Advanced Disable Checkpoints",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "catgirldev",
 	"description": "Better control when checkpoints should be disabled!",
+	"tags": [
+    "gameplay",
+    "enhancement"
+ ],
+	"links": {
+    "source": "https://github.com/AnhNguyenlost13/advanced-disable-checkpounts-geode",
+    "community": "https://discord.gg/uFj8SSUhRa"
+ },
 	"settings": {
 		"title_general": {
 			"name": "General Settings",
