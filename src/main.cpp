@@ -98,19 +98,19 @@ class $modify(PL, PlayLayer)
 };
 
 // remind me to remove this part later
-#include <Geode/modify/EditorUI.hpp> // you dumb
-class $modify(EUI, EditorUI)
-{
-	// ReSharper disable once CppHidingFunction
-	$override void selectObject(GameObject* object, const bool force)
-	{
-		EditorUI::selectObject(object, force);
-		if (object->m_objectID == 31) // startpos
-		{
-			auto* realObject = typeinfo_cast<EffectGameObject*>(object); // fuck you dynamic_cast
-			float t = LevelTools::timeForPos(realObject->getRealPosition(), get()->m_editorLayer->m_drawGridLayer->m_speedObjects, static_cast<int>(get()->m_editorLayer->m_levelSettings->m_startSpeed), realObject->m_ordValue, realObject->m_channelValue, false, get()->m_editorLayer->m_levelSettings->m_platformerMode, true, false, 0);
-			log::info("Song offset {}s", t);
+// #include <Geode/modify/EditorUI.hpp> // you dumb
+// class $modify(EUI, EditorUI)
+// {
+// 	// ReSharper disable once CppHidingFunction
+// 	$override void selectObject(GameObject* object, const bool force)
+// 	{
+// 		EditorUI::selectObject(object, force);
+// 		if (object->m_objectID == 31) // startpos
+// 		{
+// 			auto* realObject = typeinfo_cast<EffectGameObject*>(object); // fuck you dynamic_cast
+// 			float t = LevelTools::timeForPos(realObject->getRealPosition(), get()->m_editorLayer->m_drawGridLayer->m_speedObjects, static_cast<int>(get()->m_editorLayer->m_levelSettings->m_startSpeed), realObject->m_ordValue, realObject->m_channelValue, false, get()->m_editorLayer->m_levelSettings->m_platformerMode, true, false, 0);
+// 			log::info("Song offset {}s", t);
 
-		}
-	}
-};
+// 		}
+// 	}
+// };
