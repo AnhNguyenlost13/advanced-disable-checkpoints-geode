@@ -1,0 +1,72 @@
+{
+	"geode": "4.4.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "catgirldev.advanced_disable_checkpoints",
+	"name": "Advanced Disable Checkpoints",
+	"version": "v1.0.0",
+	"developer": "catgirldev",
+	"description": "Better control when checkpoints should be disabled!",
+	"settings": {
+		"title_general": {
+			"name": "General Settings",
+			"type": "title"
+		},
+		"mode": {
+			"type": "string",
+			"name": "Working Mode",
+			"default": "Disabled",
+			"one-of": ["Disabled", "Time", "Checkpoint Count", "Time & Checkpoint", "Time / Checkpoint"]
+		},
+		"time": {
+			"name": "Time",
+			"description": "How long into a level after which checkpoints should no longer be disabled.",
+			"type": "float",
+			"default": 0.0,
+			"min": 0.0,
+			"max": 3600.0,
+			"step": 0.1,
+			"enable-if": "saved:time",
+			"enable-if-description": "Enable time in the working mode first."
+		},
+		"checkpoint-count": {
+			"name": "Checkpoint Count",
+			"description": "How many checkpoints should be activated before they no longer get disabled.",
+			"type": "int",
+			"default": 2,
+			"min": 2,
+			"max": 100,
+			"step": 1,
+			"enable-if": "saved:checkpoint",
+			"enable-if-description": "Enable checkpoint count in the working mode first."
+		},
+		"title-notification": {
+			"name": "Notification Settings",
+			"type": "title"
+		},
+		"notification": {
+			"type": "bool",
+			"name": "Show Notification",
+			"default": true,
+			"description": "Show a notification when checkpoints are disabled.",
+			"enable-if": "saved:meow",
+			"enable-if-description": "Enable the mod first."
+		},
+		"notification-time": {
+			"name": "Notification Time",
+			"description": "How long the notification should be shown for.",
+			"type": "float",
+			"default": 2.0,
+			"min": 0.1,
+			"max": 10.0,
+			"step": 0.1,
+			"enable-if": "notification && saved:meow",
+			"enable-if-description": "Enable notifications/the mod itself first."
+		}
+	}
+}
+
