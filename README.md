@@ -23,4 +23,4 @@ geode build
 ```
 
 ## Preview
-<img src="/resources/misc/prefs.jpg">
+<img src="/resources/prefs.jpg">
