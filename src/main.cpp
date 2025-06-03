@@ -52,8 +52,8 @@ class $modify(PL, PlayLayer)
 		{
 			GameManager::get()->setGameVariable("0046", doDisableCheckpoints);
 			removeAllCheckpoints(); // Purge all checkpoints if minimum checkpoint count is not reached
+			checkpointCount = 0;
 		}
-		checkpointCount = 0;
 	}
 
 	$override void updateTimeLabel(const int seconds, const int milliseconds, const bool useAlternateFormatting) override
