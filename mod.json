@@ -8,7 +8,7 @@
 	},
 	"id": "catgirldev.advanced_disable_checkpoints",
 	"name": "Advanced Disable Checkpoints",
-	"version": "v1.0.2",
+	"version": "v1.0.3",
 	"developer": "catgirldev",
 	"description": "Better control when checkpoints should be disabled!",
 	"tags": [
