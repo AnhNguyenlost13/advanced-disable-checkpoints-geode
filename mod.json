@@ -1,5 +1,5 @@
 {
-	"geode": "4.4.0",
+	"geode": "4.7.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -8,7 +8,7 @@
 	},
 	"id": "catgirldev.advanced_disable_checkpoints",
 	"name": "Advanced Disable Checkpoints",
-	"version": "v1.0.3",
+	"version": "v1.0.4",
 	"developer": "catgirldev",
 	"description": "Better control when checkpoints should be disabled!",
 	"tags": [
